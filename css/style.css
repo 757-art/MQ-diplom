@@ -136,7 +136,7 @@ body{
 .trends_title {
     text-align: center;
     font-size: 125%;
-    font-family: OpenSans-Bold;
+    font-family: OpenSans-Bold, serif;
     padding-top: 3.77%;
 }
 .trends_title::after {
@@ -145,18 +145,16 @@ body{
     width: 3.9%;
     height: 3px;
     background-color: #e1d9bd;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 0.7%;
-    margin-bottom: 1.68%;}
+    margin: 0.7% auto 1.68%;
+}
 
 .trend_container {
     display: flex;
     flex-wrap: wrap;
 }
 
-}
-.trends_conteiner {
+
+.trends_container {
     display: flex;
     flex-wrap: wrap;
 
@@ -164,7 +162,7 @@ body{
 .trends_title {
     text-align: center;
     font-size: 125%;
-    font-family: OpenSans-Bold;
+    font-family: OpenSans-Bold,  serif;
     padding-top: 3.77%;
 
 }
@@ -175,22 +173,14 @@ body{
     width: 3.9%;
     height: 3px;
     background-color: #e1d9bd;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 0.7%;
-    margin-bottom: 1.68%;
+    margin: 0.7% auto 1.68%;
 }
-
-
-
-
 
 .trends {
     width:100%;
 }
-.trends_conteiner {
+.trends_container {
     display: flex;
-
 }
 
 .trends_content {
@@ -203,9 +193,7 @@ body{
     align-items: flex-end;
 }
 
-.trends_content:nth-child(-n+3) {
-    margin-right: 3px;
-}
+
 
 .trends_content_garden {
     background-image: url(../images/trend1.jpg);
@@ -238,7 +226,7 @@ body{
 }
 
 .trends_menu_posts {
-    font-family: OpenSans-Regular;
+    font-family: OpenSans-Regular, serif;
     line-height: normal;
     color: #b59f5b;
     text-decoration: none;
@@ -249,7 +237,7 @@ body{
 }
 
 .trends_title_item {
-    font-family: OpenSans-Regular;
+    font-family: OpenSans-Regular, serif;
     line-height: normal;
     color: #ffffff;
     text-decoration: none;
@@ -265,13 +253,13 @@ body{
     flex-direction: column;
     display: flex;
     box-sizing: border-box;
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 5%;
     margin-bottom: 4.86%;
 }
 
 .trends_menu_item {
     list-style-type: none;
+    margin: 5%;
 
 }
 @media (min-width: 1200px) {
@@ -354,22 +342,45 @@ body{
     .cards_wrapper {
         display: flex;
         flex-wrap: wrap;
+        margin-left: 10%;
     }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .main_card_img {
+            width: 100%;
+            margin: 5%;
+        }
+        .new_posts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+            width: 100%
+        }
+    .posts-search {
+        width: 100%;
+    }
+
 }
 .cards {
-    width: 72% ;
     margin-right: auto;
     margin-left: auto;
-    border: 1px solid red;}
+    border: 1px solid red;
+    display: flex;
+    width:100%;
+}
 .cards_wrapper {
     display: flex;
     width: 97%;
     margin: 4.8% 1.37%;
-    border: 1px solid blue;
+    border: 1px solid #0000ff;
 }
 .main {
-    width: 77.11%;
-    border: 1px solid green;
+
+     border: 1px solid green;
 
 }
 .card {
@@ -378,11 +389,7 @@ body{
     border: 1px solid red;
     margin-bottom: 6%;
 }
-.main_card_img {
-    width: 49.6%;
 
-
-}
 
 .main_img {
     max-width: 100%;
@@ -390,7 +397,7 @@ body{
 }
 
 .card_content {
-    width: 63.4%;
+    width: 100%;
     border: 2px solid blue;
     padding-right: 17.5%;
     flex-grow: 1;
@@ -407,8 +414,7 @@ body{
 }
 
 .main_menu_posts {
-    font-family: OpenSans-Regular;
-    font-family: OpenSans-Regular;
+    font-family: OpenSans-Regular, serif;
     line-height: normal;
     font-size: 87.5%;
     color: #b59f5b;
@@ -421,16 +427,16 @@ body{
 .main_title {
     margin-bottom: 7.4%;
     margin-top: 3.7%;
-    font-family: OpenSans-Bold;
+    font-family: OpenSans-Bold, serif;
     text-transform: uppercase;
     font-size: 125%;
     color: #0f0d0e;
-    width: 150%;
+
 
 }
 
-.date {
-    font-family: OpenSans-Bold;
+.card-date {
+    font-family: OpenSans-Bold, serif;
     font-size: 75%;
     color: #888888;
     text-decoration: none;
@@ -439,7 +445,7 @@ body{
 }
 
 .maine_name {
-    font-family: OpenSans-Bold;
+    font-family: OpenSans-Bold, serif;
     font-size: 75%;
     color: #000000;
     text-decoration: none;
@@ -447,19 +453,21 @@ body{
 
 
 .card_main {
-    font-family: OpenSans-Regular;
+    font-family: OpenSans-Regular, serif;
     font-size: 93.75%;
     color: #000000;
-    width: 130%;
     margin-top: 10.2%;
 }
 
 .new_posts {
     width: 22.89%;
+    margin-top: 4.8%;
+
 }
 
 .posts-search {
     display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
 }
@@ -467,7 +475,7 @@ body{
 .section_title {
     margin-bottom: 40px;
     text-align: center;
-    font-family: OpenSans-Bold;
+    font-family: OpenSans-Bold, serif;
     text-transform: uppercase;
     font-size: 14px;
     color: #0f0d0e;
@@ -479,8 +487,35 @@ body{
     width: 70px;
     height: 3px;
     background-color: #e1d9bd;
-    margin-left: 100px;
-    margin-top: 13px;
+    margin: auto;
+
 }
 
+.socials_footer {
 
+    padding: 10px 0;
+    text-align: center;}
+
+.socials {
+    display: flex;
+    padding-bottom:5%;
+    background: #f4f7f6;
+
+
+
+}
+
+.socials-list {
+    display: flex;
+    margin: auto;
+    margin-top: 5%;
+    list-style-type: none;
+    }
+
+.socials-list-item:nth-child(n + 2) {
+    margin-left: 50px;
+
+}
+.copyright_description {
+    color: #999999;
+}
