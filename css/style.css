@@ -164,6 +164,7 @@ body{
     font-size: 125%;
     font-family: OpenSans-Bold,  serif;
     padding-top: 3.77%;
+    text-transform: uppercase;
 
 }
 
@@ -313,7 +314,7 @@ body{
     }
     .menu-burger__line {
         background-color: #ffffff;
-        border: 1px solid #b2b9b7;
+        border: 3px solid #ffffff;
         width: 100%;
     }
     .menu-burger__line:nth-child(-n+2) {
@@ -324,9 +325,19 @@ body{
         padding-bottom: 60%;
         width: 82%;
            }
+    .trends_title::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 3px;
+    background-color: #e1d9bd;
+    margin: 0.7% auto 1.68%;
+}
+
     .trends_content {
         width: 100%;
-        margin: 0;
+        margin-top: 1%;
+        margin-bottom: 1%;
         min-height: 240px;
         position: relative;
 
@@ -362,8 +373,22 @@ body{
         }
     .posts-search {
         width: 100%;
+        margin-left: 5%;
     }
-
+    
+    
+    .posts-search-content {
+        width: 80%;  
+        margin-left: 5%
+    }
+    
+    
+    .posts-search-item {
+        display: flex;
+    }
+    
+   
+     
 }
 .cards {
     margin-right: auto;
@@ -399,10 +424,11 @@ body{
 .card_content {
     width: 100%;
     border: 2px solid blue;
-    padding-right: 17.5%;
+    padding-right: 4%;
     flex-grow: 1;
     box-sizing: border-box;
     min-height: 219px;
+    margin-left: 5%;
 }
 
 
@@ -410,7 +436,7 @@ body{
 .main_menu {
     display: flex;
     list-style-type: none;
-
+    
 }
 
 .main_menu_posts {
@@ -460,7 +486,7 @@ body{
 }
 
 .new_posts {
-    width: 22.89%;
+    width: 100%;
     margin-top: 4.8%;
 
 }
@@ -468,8 +494,10 @@ body{
 .posts-search {
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
+       
+}
+ .posts-search-subtitle {
+        text-transform: uppercase;    
 }
 
 .section_title {
@@ -479,6 +507,7 @@ body{
     text-transform: uppercase;
     font-size: 14px;
     color: #0f0d0e;
+    
 }
 
 .section_title::after {
